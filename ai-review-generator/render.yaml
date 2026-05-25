@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: nayan-optics-reviews
+    runtime: node
+    rootDir: .
+    buildCommand: npm install
+    startCommand: node server/index.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: BACKEND
+        value: mock
+      # To enable Gemini AI generation, add GEMINI_API_KEY in the Render dashboard
+      # under Environment → Add Environment Variable. Do NOT put it here.
+      # - key: GEMINI_API_KEY
+      #   sync: false
+    autoDeploy: true

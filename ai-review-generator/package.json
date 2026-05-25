@@ -1,0 +1,24 @@
+{
+  "name": "nayan-optics-review-generator",
+  "version": "1.0.0",
+  "description": "AI-powered Google Maps review generator for Nayan Optics optical shop",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js",
+    "test": "node --experimental-vm-modules node_modules/.bin/jest --testPathPattern=tests/"
+  },
+  "dependencies": {
+    "express": "4.18.2",
+    "node-fetch": "3.3.2",
+    "uuid": "9.0.0"
+  },
+  "devDependencies": {
+    "fast-check": "3.19.0",
+    "jest": "29.7.0"
+  },
+  "type": "module",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

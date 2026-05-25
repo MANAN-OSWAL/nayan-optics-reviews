@@ -1,0 +1,90 @@
+{
+  "shopName": "Nayan Optics",
+  "googleMapsLink": "https://g.page/r/Cen2_Z3cXfLnEBE/review",
+
+  "server": {
+    "port": 3000
+  },
+
+  "backend": "mock",
+
+  "ollama": {
+    "host": "http://localhost",
+    "port": 11434,
+    "model": "llama3"
+  },
+
+  "openai": {
+    "apiKey": "",
+    "model": "gpt-4o-mini"
+  },
+
+  "gemini": {
+    "apiKey": "",
+    "model": "gemini-1.5-flash"
+  },
+
+  "generation": {
+    "count": 5,
+    "minWords": 40,
+    "maxWords": 300,
+    "maxRetries": 3,
+    "timeoutMs": 30000
+  },
+
+  "languages": [
+    { "code": "en", "label": "English" },
+    { "code": "mr", "label": "मराठी" }
+  ],
+
+  "tones": [
+    { "id": "enthusiastic", "label": "Enthusiastic" },
+    { "id": "formal",       "label": "Formal"       },
+    { "id": "brief",        "label": "Brief"        }
+  ],
+
+  "defaultTone": "enthusiastic",
+
+  "categories": [
+    {
+      "id": "new_glasses",
+      "label": "New Glasses",
+      "labelMr": "नवीन चष्मा",
+      "icon": "glasses",
+      "color": "blue"
+    },
+    {
+      "id": "fast_service",
+      "label": "Fast Service (10 min)",
+      "labelMr": "जलद सेवा (१० मिनिटे)",
+      "icon": "zap",
+      "color": "amber"
+    },
+    {
+      "id": "eye_exam",
+      "label": "Eye Exam",
+      "labelMr": "डोळ्यांची तपासणी",
+      "icon": "eye",
+      "color": "emerald"
+    },
+    {
+      "id": "sunglasses",
+      "label": "Sunglasses",
+      "labelMr": "सनग्लासेस",
+      "icon": "sun",
+      "color": "orange"
+    },
+    {
+      "id": "frame_adjustment",
+      "label": "Frame Adjustment",
+      "labelMr": "फ्रेम दुरुस्ती",
+      "icon": "sparkles",
+      "color": "purple"
+    }
+  ],
+
+  "history": {
+    "maxPerCategory": 100,
+    "similarityThreshold": 0.80
+  }
+}

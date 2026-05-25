@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="description" content="AI-powered review generator for Nayan Optics" />
+  <meta name="theme-color" content="#2563eb" />
+
+  <title>Nayan Optics — Review Generator</title>
+
+  <!-- Noto Sans Devanagari for Marathi text rendering -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Single mount point — all UI is rendered by app.js -->
+  <div id="app" role="main" aria-label="Nayan Optics Review Generator">
+    <!-- Initial loading state shown before JS initialises -->
+    <div style="height:100vh;display:flex;justify-content:center;align-items:center;color:#2563eb;font-family:Inter,sans-serif;">
+      Loading…
+    </div>
+  </div>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
